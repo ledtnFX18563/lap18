@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--bootstrap css-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Carousel Page</title>
+  </head>
+  <body>
+    <!--xây dựng navbar-->
+    <header>
+      <nav
+        class="navbar navbar-expand-lg navbar-dark bg-dark text-light fixed-top"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Carousel</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+
+              <li class="nav-item">
+                <a
+                  class="nav-link disabled"
+                  href="#"
+                  tabindex="-1"
+                  aria-disabled="true"
+                  >Disabled</a
+                >
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- xây dựng phần slide-->
+    <div
+      id="carouselExampleDark"
+      class="carousel carousel-dark slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img
+            src="https://1.bp.blogspot.com/-NIHu9_EqAQo/VABtO1ycKYI/AAAAAAAADrE/Z9xm1VG47SQ/s1600/Hinhnendl.com---Hinh-nen-khong-gian%2B(7).jpg"
+            class="d-block w-100"
+            alt=""
+          />
+          <div class="carousel-caption text-start text-light">
+            <h1>Example headline.</h1>
+            <p>Some representative placeholder content for the first slide.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img
+            src="https://thongtinz.com/wp-content/uploads/2020/08/hinh-nen-vu-tru-5.jpg"
+            class="d-block w-100"
+            alt=""
+          />
+          <div class="carousel-caption text-start text-light">
+            <h1>Another example headline</h1>
+            <p>Some representative placeholder content for the second slide.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://lh3.googleusercontent.com/pw/ACtC-3fKrCZz3rgV-2b9FXM1joGfyJLyY4wV2_yermv6AOXnQ56dE_RvE-IhKrE2f0_RfQ5Q2tZ-869k5MhvXUHPB3lvWYTD5wgiXrcmwzFygPPrwu2_Qx7ny65Q8iNjohBpft4wC5aBCUNUf5483r76PHCw=w1186-h667-no?authuser=0"
+            class="d-block w-100"
+            alt=""
+          />
+          <div class="carousel-caption text-start text-light">
+            <h1>One more for good measure</h1>
+            <p>Some representative placeholder content for the third slide.</p>
+            <p>
+              <a class="btn btn-lg btn-primary" href="#"> Browse gallery</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleDark"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleDark"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!--footer-->
+    <footer class="text-center">
+      <div class="p-3 p-0">
+        <div class="row d-flex flex-row align-items-center">
+          <div class="col-md-7 col-lg-8 text-center text-md-start">
+            <!-- Copyright -->
+            <div class="p-3 d-flex">
+              © 2017-2021 Company,inc
+              <ul class="d-flex gap-5">
+                <li>
+                  <a href="#">Privacy</a>
+                </li>
+                <li>
+                  <a href="#">Tems</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="text-end top-0">
+            <a href="#"> Back to top</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--Javascript bundle-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
